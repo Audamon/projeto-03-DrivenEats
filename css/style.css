@@ -1,0 +1,76 @@
+body{
+    background-color: #eeeeee;
+}
+.topo{
+    width: 100vw;
+    height: 92px;
+    background-color: #cf2b2b;
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 21px;
+}
+
+
+
+.barra-inferior{
+    width: 100vw;
+    height: 92px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.retangulo-botao{
+    background-color: #cbcbcb;
+    border-radius: 50px;
+    width: 80vw;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.texto-botao{
+   width: 60vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-left: 25px;
+    
+}
+
+/* FONTES - INICIO */
+.font-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.font-righteous{
+    font-family: 'Righteous', cursive;
+}
+.font-size-44{
+    font-size: 44px;
+}
+.font-size-26{
+    font-size: 26px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-18{
+    font-size: 18px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+.font-size-15{
+    font-size: 15px;
+}
+/* FONTES - FIM */
