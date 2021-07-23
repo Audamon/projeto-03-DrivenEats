@@ -1,6 +1,12 @@
 body{
     background-color: #eeeeee;
 }
+*{
+    box-sizing: border-box;
+}
+strong{
+    font-weight: bold;
+}
 .topo{
     width: 100vw;
     height: 92px;
@@ -15,7 +21,86 @@ body{
     padding-left: 21px;
 }
 
+.conteudo{
+    background-color: #cbcbcb;
+    height: auto;
+    margin: 92px 0px 92px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+}
+.category{
+    background-color: #cbcbcb;
+    height: auto;
+    width: auto;
+    margin: 0px 10px 16px 10px;
+
+}
+.category-dishes{
+  
+    background-color: #cbcbcb;
+    height: 216px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;  
+}
+.category-title{
+    margin: 31px 0px 17px 0px;
+}
+.dishes{
+    height: 216px;
+    width: 172px;
+    margin:0px 10px 0px  10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 16px 14px 0px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    
+}
+.dishes-img{
+    
+    width: 144px;
+    border-radius: 4px;
+}
+.dishes-title{
+    color: #333333;
+}
+.dishes-sub-title{
+    color: #a6a6a6;
+}
+.dishes-price{
+    color: #000000;
+}
+.category-dessert{
+  
+    background-color: #cbcbcb;
+    height: 216px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;  
+}
+.category-beverage{
+  
+    background-color: #cbcbcb;
+    height: 216px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;  
+}
 
 .barra-inferior{
     width: 100vw;
@@ -74,3 +159,7 @@ body{
     font-size: 15px;
 }
 /* FONTES - FIM */
+
+.dishe-slected{
+    border: 2px solid #32b72f;
+}
