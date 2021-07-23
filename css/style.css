@@ -19,6 +19,7 @@ strong{
     top: 0;
     left: 0;
     padding-left: 21px;
+    box-shadow: 2px 5px 6px #888888;
 }
 
 .conteudo{
@@ -37,7 +38,7 @@ strong{
     margin: 0px 10px 16px 10px;
 
 }
-.category-dishes{
+.category-dish{
   
     background-color: #cbcbcb;
     height: 216px;
@@ -51,7 +52,7 @@ strong{
 .category-title{
     margin: 31px 0px 17px 0px;
 }
-.dishes{
+.dish{
     height: 216px;
     width: 172px;
     margin:0px 10px 0px  10px;
@@ -62,21 +63,22 @@ strong{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
-    
+    box-shadow: 0px 0px 10px -4px #888888;
     
 }
-.dishes-img{
+
+.dish-img{
     
     width: 144px;
     border-radius: 4px;
 }
-.dishes-title{
+.dish-title{
     color: #333333;
 }
-.dishes-sub-title{
+.dish-sub-title{
     color: #a6a6a6;
 }
-.dishes-price{
+.dish-price{
     color: #000000;
 }
 .category-dessert{
@@ -160,6 +162,6 @@ strong{
 }
 /* FONTES - FIM */
 
-.dishe-slected{
-    border: 2px solid #32b72f;
+.dish-selected{
+    border: 3px solid #32b72f;
 }
