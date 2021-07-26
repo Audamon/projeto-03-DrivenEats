@@ -186,14 +186,19 @@ body{
     align-items: center;
     justify-content: center;
     color: #ffffff;
+    
 }
-
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
 .texto-botao{
    width: 60vw;
    display: flex;
    align-items: center;
    justify-content: center;
    padding-left: 25px;
+   
     
 }
 
