@@ -63,7 +63,7 @@ function buttonActivation(){
 function closeOrder(){
     
     const finalPrice = (Number.parseFloat(dishPrice.replace(/[^\d.-]/g, '')) + Number.parseFloat(beveragePrice.replace(/[^\d.-]/g, '')) + Number.parseFloat(dessertPrice.replace(/[^\d.-]/g, '')));
-    const text = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n - Prato: ${markedDish} \n - Bebida: ${markedBeverage} \n - Sobremesa: ${markedDessert} \n Total: R$ ${finalPrice.toFixed(2)} \n`);
+    let text = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n - Prato: ${markedDish} \n - Bebida: ${markedBeverage} \n - Sobremesa: ${markedDessert} \n Total: R$ ${finalPrice.toFixed(2)} \n`);
     document.querySelector("a[href='https://wa.me/555496545412?text=']").setAttribute("href", `https://wa.me/555496545412?text=${text}`);
     console.log("Hyperlink Changed");
 }
