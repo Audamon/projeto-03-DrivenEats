@@ -1,13 +1,12 @@
 body{
     background-color: #eeeeee;
 }
+
 *{
     box-sizing: border-box;
 }
-strong{
-    font-weight: bold;
-}
-.topo{
+/*TOP BAR*/
+.top{
     width: 100vw;
     height: 92px;
     background-color: #cf2b2b;
@@ -22,7 +21,10 @@ strong{
     box-shadow: 2px 5px 6px #888888;
 }
 
-.conteudo{
+/*TOP BAR*/
+
+/*CONTENTS*/
+.content{
     background-color: #cbcbcb;
     height: auto;
     margin: 92px 0px 92px 0px;
@@ -31,6 +33,7 @@ strong{
     justify-content: space-between;
 
 }
+
 .category{
     background-color: #cbcbcb;
     height: auto;
@@ -38,6 +41,7 @@ strong{
     margin: 0px 10px 16px 10px;
 
 }
+
 .category-dish{
   
     background-color: #cbcbcb;
@@ -49,9 +53,27 @@ strong{
     justify-content: space-between;
     overflow-x: scroll;  
 }
+
+.category-dish > div{
+  
+    height: 216px;
+    width: 172px;
+    margin:0px 10px 0px  10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 16px 14px 0px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px -4px #888888;
+    
+}
+
 .category-title{
     margin: 31px 0px 17px 0px;
 }
+
 .dish{
     height: 216px;
     width: 172px;
@@ -72,15 +94,19 @@ strong{
     width: 144px;
     border-radius: 4px;
 }
+
 .dish-title{
     color: #333333;
 }
+
 .dish-sub-title{
     color: #a6a6a6;
 }
+
 .dish-price{
     color: #000000;
 }
+
 .category-dessert{
   
     background-color: #cbcbcb;
@@ -92,6 +118,22 @@ strong{
     justify-content: space-between;
     overflow-x: scroll;  
 }
+
+.category-dessert > div{
+  
+    height: 216px;
+    width: 172px;
+    margin:0px 10px 0px  10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 16px 14px 0px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px -4px #888888;
+}
+
 .category-beverage{
   
     background-color: #cbcbcb;
@@ -104,7 +146,25 @@ strong{
     overflow-x: scroll;  
 }
 
-.barra-inferior{
+.category-beverage > div{
+  
+    height: 216px;
+    width: 172px;
+    margin:0px 10px 0px  10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 16px 14px 0px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px -4px #888888;
+}
+/*CONTENTS*/
+
+/*BOTTOM BAR*/
+
+.bottom-bar{
     width: 100vw;
     height: 92px;
     background-color: #ffffff;
@@ -116,6 +176,7 @@ strong{
     justify-content: center;
    
 }
+
 .retangulo-botao{
     background-color: #cbcbcb;
     border-radius: 50px;
@@ -126,6 +187,7 @@ strong{
     justify-content: center;
     color: #ffffff;
 }
+
 .texto-botao{
    width: 60vw;
    display: flex;
@@ -135,33 +197,56 @@ strong{
     
 }
 
-/* FONTES - INICIO */
+/*BOTTOM BAR*/
+
+/* FONTS */
+
 .font-roboto{
     font-family: 'Roboto', sans-serif;
 }
+
 .font-righteous{
     font-family: 'Righteous', cursive;
 }
+
 .font-size-44{
     font-size: 44px;
 }
+
 .font-size-26{
     font-size: 26px;
 }
+
 .font-size-20{
     font-size: 20px;
 }
+
 .font-size-18{
     font-size: 18px;
 }
+
 .font-size-16{
     font-size: 16px;
 }
+
 .font-size-15{
     font-size: 15px;
 }
-/* FONTES - FIM */
 
-.dish-selected{
-    border: 3px solid #32b72f;
+strong{
+    font-weight: bold;
+}
+
+/* FONTS */
+
+.selected-item{
+    
+     border: 3px solid #32b72f; 
+   
+}
+
+.button-color{
+
+    background-color: #32b72f;
+
 }

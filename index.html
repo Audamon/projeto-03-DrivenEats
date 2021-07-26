@@ -1,187 +1,311 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
+    
 <head>
+    
     <meta charset="UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="/css/reset.css" />
+    
     <link rel="stylesheet" href="/css/style.css" />
-    <title>DrivenEats</title>
+    
+    <title>
+        DrivenEats
+    </title>
 </head>
+
 <body>
-    <div class="topo">
-        <p class="nome-restaurante font-righteous font-size-44">DrivenEats </p>
-        <p class="font-roboto font-size-18">Sua comida em 6 minutos</p>
+
+    <div class="top">
+
+        <p class="nome-restaurante font-righteous font-size-44">
+            DrivenEats 
+        </p>
+
+        <p class="font-roboto font-size-18">
+            Sua comida em 6 minutos
+        </p>
+
     </div>
-    <div class="conteudo">
+
+    <div class="content">
+
         <div class="category">
-            <div class="category-title font-righteous font-size-26">Primeiro, seu prato</div>
+
+            <div class="category-title font-righteous font-size-26">
+                Primeiro, seu prato
+            </div>
+
             <div class="category-dish">
-                <div class="dish font-roboto" >
+
+                <div class="dish1 font-roboto" onclick="selectedDish(this);"  >
+
                     <img src="/Assets/pizza-peperoni.jpg"  class="dish-img"> 
+
                     <div class="dish-title font-size-16">
                         <strong>Pizza de Pepperoni</strong> 
                     </div>
+
                     <div class="dish-sub-title font-size-15">
                         Queijo, pepperoni, massa
                     </div>
+
                     <div class="dish-price font-size-16">
-                        R$ 14,90
+                        R$ 14.90
                     </div>
+
                 </div>
-                <div   class="dish font-roboto" >
+
+                <div   class="dish2 font-roboto" onclick="selectedDish(this);">
+
                     <img src="/Assets/menarosto.jpg"  class="dish-img"> 
+
                     <div class="dish-title font-size-16">
                         <strong>Menarosto</strong> 
                     </div>
+
                     <div class="dish-sub-title font-size-15">
                         Frango, porco, cabra
                     </div>
+
                     <div class="dish-price font-size-16">
-                        R$ 20,90
+                        R$ 20.90
                     </div>
+
                 </div>
-                <div  class="dish font-roboto">
+
+                <div  class="dish3 font-roboto" onclick="selectedDish(this);">
+
                     <img src="/Assets/quati.jpg"  class="dish-img"> 
+
                     <div class="dish-title font-size-16">
                         <strong>Quati assado</strong> 
                     </div>
+
                     <div class="dish-sub-title font-size-15">
                         Quati
                     </div>
+
                     <div class="dish-price font-size-16">
-                        R$ 18,90
+                        R$ 18.90
                     </div>
+
                 </div>
-                <div  class="dish font-roboto">
+
+                <div  class="dish4 font-roboto" onclick="selectedDish(this);">
+
                     <img src="/Assets/tortei.jpg"  class="dish-img"> 
+
                     <div class="dish-title font-size-16">
                         <strong>Tortéi</strong> 
                     </div>
+
                     <div class="dish-sub-title font-size-15">
                         Queijo, moranga, massa
                     </div>
+
                     <div class="dish-price font-size-16">
-                        R$ 25,90
+                        R$ 25.90
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
         <div class="category">
-            <div class="category-title font-righteous font-size-26">Agora, sua bebida</div>
+
+            <div class="category-title font-righteous font-size-26">
+                Agora, sua bebida
+            </div>
+
             <div class="category-beverage">
-                <div class="dish font-roboto">
+
+                <div class="beverage1 font-roboto" onclick="selectedBeverage(this)">
+
                     <img src="/Assets/coca.jpg"  class="dish-img"> 
+
                     <div class="dish-title font-size-16">
                         <strong>Coco-cola</strong> 
                     </div>
+
                     <div class="dish-sub-title font-size-15">
                         Lata: 350ml
                     </div>
+
                     <div class="dish-price font-size-16">
-                        R$ 3,50
+                        R$ 3.50
                     </div>
+
                 </div>
-                <div class="dish font-roboto">
+
+                <div class="beverage2 font-roboto" onclick="selectedBeverage(this)">
                     <img src="/Assets/guarana.jpg"  class="dish-img"> 
+
                     <div class="dish-title font-size-16">
                         <strong>Guaraná Antartica</strong> 
                     </div>
+
                     <div class="dish-sub-title font-size-15">
                         Lata: 350ml
                     </div>
+
                     <div class="dish-price font-size-16">
-                        R$ 3,00
+                        R$ 3.00
                     </div>
+
                 </div>
-                <div class="dish font-roboto">
-                    <img src="/Assets/fruki.jpg"  class="dish-img"> 
+
+                <div class="beverage3 font-roboto" onclick="selectedBeverage(this)">
+                    
+                    <img src="/Assets/fruki.jpg"  class="dish-img">
+
                     <div class="dish-title font-size-16">
                         <strong>Guaraná Fruki</strong> 
                     </div>
+
                     <div class="dish-sub-title font-size-15">
                         Garrafa: 600ml
                     </div>
+
                     <div class="dish-price font-size-16">
-                        R$ 4,20
+                        R$ 4.20
                     </div>
+
                 </div>
-                <div class="dish font-roboto">
+
+                <div class="beverage4 font-roboto" onclick="selectedBeverage(this)">
+
                     <img src="/Assets/agua.jpg"  class="dish-img"> 
+
                     <div class="dish-title font-size-16">
                         <strong>Agua Cristal</strong> 
                     </div>
+
                     <div class="dish-sub-title font-size-15">
                         Agua mineral
                     </div>
+
                     <div class="dish-price font-size-16">
-                        R$ 2,50
+                        R$ 2.50
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
         <div class="category">
-            <div class="category-title font-righteous font-size-26">Por fim, sua sobremesa</div>
+
+            <div class="category-title font-righteous font-size-26">
+                Por fim, sua sobremesa
+            </div>
+
             <div class="category-dessert">
-                <div class="dish font-roboto">
+
+                <div class="dessert1 font-roboto" onclick="selectedDessert(this);">
+
                     <img src="/Assets/grostoli.jpg"  class="dish-img"> 
+
                     <div class="dish-title font-size-16">
                         <strong>Grostoli</strong> 
                     </div>
+
                     <div class="dish-sub-title font-size-15">
                         Massa, açucar
                     </div>
+
                     <div class="dish-price font-size-16">
-                        R$ 10,00
+                        R$ 10.00
                     </div>
+
                 </div>
-                <div class="dish font-roboto">
+
+                <div class="dessert2 font-roboto" onclick="selectedDessert(this);">
                     <img src="/Assets/ambrosia.jpg"  class="dish-img"> 
+
                     <div class="dish-title font-size-16">
                         <strong>Ambrosia</strong> 
                     </div>
+
                     <div class="dish-sub-title font-size-15">
                         Leite, açucar
                     </div>
+
                     <div class="dish-price font-size-16">
-                        R$ 7,90
+                        R$ 7.90
                     </div>
+
                 </div>
-                <div class="dish font-roboto">
+
+                <div class="dessert3 font-roboto" onclick="selectedDessert(this);">
                     <img src="/Assets/sagu.jpg"  class="dish-img"> 
+
                     <div class="dish-title font-size-16">
                         <strong>Sagu</strong> 
                     </div>
+
                     <div class="dish-sub-title font-size-15">
                         Sagu, suco de uva
                     </div>
+
                     <div class="dish-price font-size-16">
-                        R$ 8,90
+                        R$ 8.90
                     </div>
+
                 </div>
-                <div class="dish font-roboto">
+
+                <div class="dessert4 font-roboto" onclick="selectedDessert(this);">
+
                     <img src="/Assets/pudim.jpg"  class="dish-img"> 
+
                     <div class="dish-title font-size-16">
                         <strong>Pudim de chuchu</strong> 
                     </div>
+
                     <div class="dish-sub-title font-size-15">
                         Leite, chuchu, açucar
                     </div>
+
                     <div class="dish-price font-size-16">
-                        R$ 6,90
+                        R$ 6.90
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
-    <div class="barra-inferior">
-        <div class="retangulo-botao">
-            <div class="texto-botao font-roboto font-size-20">  Selecione os 3 itens para fechar o pedido </div>
+
+    <div class="bottom-bar">
+
+        <div class="retangulo-botao font-roboto font-size-20"  onclick="closeOrder()">
+
+            <div class="texto-botao ">  
+                Selecione os 3 itens para fechar o pedido 
+            </div>
+
         </div>
+
     </div>
+
     <script src="/Scripts/scripst.js"></script>
+
 </body>
+
 </html>
