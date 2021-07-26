@@ -51,8 +51,8 @@ function buttonActivation(){
     if(markedDish !== null){
         if(markedDessert !== null){
             if( markedBeverage !== null){
-                const buttonActived = document.querySelector(".retangulo-botao");
-                const buttonText = document.querySelector(".texto-botao");
+                const buttonActived = document.querySelector(".rectangle-button");
+                const buttonText = document.querySelector(".button-text");
                 buttonActived.classList.add("button-color");
                 buttonText.innerHTML = "Fechar Pedido";
             }
@@ -88,11 +88,10 @@ function closeOrder(){
                 const adress = prompt("Endereço");
                 const finalPrice = (Number.parseFloat(dishPrice.replace(/[^\d.-]/g, '')) + Number.parseFloat(beveragePrice.replace(/[^\d.-]/g, '')) + Number.parseFloat(dessertPrice.replace(/[^\d.-]/g, '')));
                 let text = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n - Prato: ${markedDish} \n - Bebida: ${markedBeverage} \n - Sobremesa: ${markedDessert} \n Total: R$ ${finalPrice.toFixed(2)} \n \n Nome: ${name} \n Endereço: ${adress}`);
-                document.querySelector("a[href='https://wa.me/555496545412?text=']").setAttribute("href", `https://wa.me/555496545412?text=${text}`);
+                window.open(`https://wa.me/555496545412?text=${text}`);
             }
         }
-    }
-    
+    } 
 }
 
 function cancelOrder(){

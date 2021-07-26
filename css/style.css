@@ -165,7 +165,7 @@ body{
    
 }
 
-.retangulo-botao{
+.rectangle-button{
     background-color: #cbcbcb;
     border-radius: 50px;
     width: 80vw;
@@ -176,11 +176,13 @@ body{
     color: #ffffff;
     
 }
+
 a{
     text-decoration: none;
     color: #FFFFFF;
 }
-.texto-botao{
+
+.button-text{
    width: 60vw;
    display: flex;
    align-items: center;
@@ -189,9 +191,7 @@ a{
    
     
 }
-.disable-link{
-    pointer-events: none;
-}
+
 
 /*BOTTOM BAR*/
 
@@ -222,7 +222,8 @@ a{
     justify-content: center;
    
 }
-.close-order-button a{
+
+.close-order-button {
     color: #50D074;
 }
 
