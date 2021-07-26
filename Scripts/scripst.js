@@ -60,7 +60,8 @@ function buttonActivation(){
 }
 
 function closeOrder(){
-    alert("ok");
-    const finalPrice = (Number(dishPrice.match(/\d+/)[0]) + Number(beveragePrice.match(/\d+/)[0]) + Number(dessertPrice.match(/\d+/)[0]));
-    const text = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n - Prato: ${markedDish} \n - Bebida: ${markedBeverage} \n - Sobremesa: ${markedDessert} \n Total: R$ $ `);
+    
+    const finalPrice = (Number.parseFloat(dishPrice.replace(/[^\d.-]/g, '')) + Number.parseFloat(beveragePrice.replace(/[^\d.-]/g, '')) + Number.parseFloat(dessertPrice.replace(/[^\d.-]/g, '')));
+    const text = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n - Prato: ${markedDish} \n - Bebida: ${markedBeverage} \n - Sobremesa: ${markedDessert} \n Total: R$ ${finalPrice.toFixed(2)} \n`);
+   `https://wa.me/555496545412?text=${text} `
 }
