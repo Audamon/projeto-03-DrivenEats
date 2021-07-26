@@ -54,7 +54,7 @@
                     <img src="/Assets/pizza-peperoni.jpg"  class="dish-img"> 
 
                     <div class="dish-title font-size-16">
-                        <strong>Pizza de Pepperoni</strong> 
+                        <strong>Pizza</strong> 
                     </div>
 
                     <div class="dish-sub-title font-size-15">
@@ -62,8 +62,10 @@
                     </div>
 
                     <div class="dish-price font-size-16">
-                        R$ 14.90
+                        R$14.90
                     </div>
+
+                    
 
                 </div>
 
@@ -80,7 +82,7 @@
                     </div>
 
                     <div class="dish-price font-size-16">
-                        R$ 20.90
+                        R$20.90
                     </div>
 
                 </div>
@@ -90,7 +92,7 @@
                     <img src="/Assets/quati.jpg"  class="dish-img"> 
 
                     <div class="dish-title font-size-16">
-                        <strong>Quati assado</strong> 
+                        <strong>Quati</strong> 
                     </div>
 
                     <div class="dish-sub-title font-size-15">
@@ -98,7 +100,7 @@
                     </div>
 
                     <div class="dish-price font-size-16">
-                        R$ 18.90
+                        R$18.90
                     </div>
 
                 </div>
@@ -116,7 +118,7 @@
                     </div>
 
                     <div class="dish-price font-size-16">
-                        R$ 25.90
+                        R$25.90
                     </div>
 
                 </div>
@@ -146,7 +148,7 @@
                     </div>
 
                     <div class="dish-price font-size-16">
-                        R$ 3.50
+                        R$3.50
                     </div>
 
                 </div>
@@ -155,7 +157,7 @@
                     <img src="/Assets/guarana.jpg"  class="dish-img"> 
 
                     <div class="dish-title font-size-16">
-                        <strong>Guaraná Antartica</strong> 
+                        <strong>Guaraná</strong> 
                     </div>
 
                     <div class="dish-sub-title font-size-15">
@@ -163,7 +165,7 @@
                     </div>
 
                     <div class="dish-price font-size-16">
-                        R$ 3.00
+                        R$3.00
                     </div>
 
                 </div>
@@ -173,7 +175,7 @@
                     <img src="/Assets/fruki.jpg"  class="dish-img">
 
                     <div class="dish-title font-size-16">
-                        <strong>Guaraná Fruki</strong> 
+                        <strong>Fruki</strong> 
                     </div>
 
                     <div class="dish-sub-title font-size-15">
@@ -181,7 +183,7 @@
                     </div>
 
                     <div class="dish-price font-size-16">
-                        R$ 4.20
+                        R$4.20
                     </div>
 
                 </div>
@@ -191,7 +193,7 @@
                     <img src="/Assets/agua.jpg"  class="dish-img"> 
 
                     <div class="dish-title font-size-16">
-                        <strong>Agua Cristal</strong> 
+                        <strong>Agua </strong> 
                     </div>
 
                     <div class="dish-sub-title font-size-15">
@@ -199,7 +201,7 @@
                     </div>
 
                     <div class="dish-price font-size-16">
-                        R$ 2.50
+                        R$2.50
                     </div>
 
                 </div>
@@ -229,8 +231,9 @@
                     </div>
 
                     <div class="dish-price font-size-16">
-                        R$ 10.00
+                        R$10.00
                     </div>
+
 
                 </div>
 
@@ -246,8 +249,10 @@
                     </div>
 
                     <div class="dish-price font-size-16">
-                        R$ 7.90
+                        R$7.90
                     </div>
+
+                    
 
                 </div>
 
@@ -263,8 +268,10 @@
                     </div>
 
                     <div class="dish-price font-size-16">
-                        R$ 8.90
+                        R$8.90
                     </div>
+
+                    
 
                 </div>
 
@@ -273,7 +280,7 @@
                     <img src="/Assets/pudim.jpg"  class="dish-img"> 
 
                     <div class="dish-title font-size-16">
-                        <strong>Pudim de chuchu</strong> 
+                        <strong>Pudim</strong> 
                     </div>
 
                     <div class="dish-sub-title font-size-15">
@@ -281,8 +288,8 @@
                     </div>
 
                     <div class="dish-price font-size-16">
-                        R$ 6.90
-                    </div>
+                        R$6.90
+                    </div> 
 
                 </div>
 
@@ -294,20 +301,52 @@
 
     <div class="bottom-bar">
 
-        <div class="retangulo-botao font-roboto font-size-20"  >
+        <div class="retangulo-botao font-roboto font-size-20" onclick="confirmOrder();" >
 
-            <a href="https://wa.me/555496545412?text=" onclick="closeOrder();">
-
-                <div class="texto-botao ">  
-                    Selecione os 3 itens para fechar o pedido 
-                </div>
-
-            </a>
+            <div class="texto-botao ">  
+                Selecione os 3 itens para fechar o pedido 
+            </div>
 
         </div>
 
     </div>
 
+    <div class="check-order invisible" >
+
+        <div class="confirmation font-roboto font-size-22">
+            <strong>Confirme seu pedido</strong> 
+        </div>
+
+        <div class="chosen-dish font-roboto font-size-22">
+            
+        </div>
+
+        <div class="chosen-beverage font-roboto font-size-22">
+            
+        </div>
+
+        <div class="chosen-dessert font-roboto font-size-22">
+            
+        </div>
+
+        <div class="total-price font-roboto font-size-22">
+            <strong>TOTAL  </strong>
+        </div>
+
+        <div class="close-order-button font-roboto font-size-22" onclick="closeOreder();">
+
+            <a href="https://wa.me/555496545412?text="  >
+                Tudo certo, pode pedir!
+            </a>
+
+        </div>
+
+        <div class="cancel-button font-roboto font-size-22" onclick="cancelOrder();">
+            Cancelar
+        </div>
+
+    </div>
+    
     <script src="/Scripts/scripst.js"></script>
 
 </body>

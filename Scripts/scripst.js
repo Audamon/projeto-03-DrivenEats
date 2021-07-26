@@ -13,11 +13,11 @@ function selectedDish(dish){
         markedDish = null;
         dishPrice = null;
         dishMark.classList.remove("selected-item");
+        
     }
     dish.classList.add("selected-item");
     markedDish = dish.querySelector(".dish-title > strong").innerHTML;
     dishPrice = dish.querySelector(".dish-price").innerHTML;
-
     buttonActivation();
 }
 
@@ -60,10 +60,42 @@ function buttonActivation(){
     }
 }
 
+function confirmOrder(){
+    const confirm = document.querySelector(".check-order");
+    const dish = document.querySelector(".chosen-dish");
+    const beverage = document.querySelector(".chosen-beverage");
+    const dessert = document.querySelector(".chosen-dessert");
+    const total = document.querySelector(".total-price");
+    const price = "R$" + (Number.parseFloat(dishPrice.replace(/[^\d.-]/g, '')) + Number.parseFloat(beveragePrice.replace(/[^\d.-]/g, '')) + Number.parseFloat(dessertPrice.replace(/[^\d.-]/g, ''))).toFixed(2);
+    if(markedDish !== null){
+        if(markedDessert !== null){
+            if( markedBeverage !== null){
+                confirm.classList.remove("invisible");
+                dish.innerHTML = `${markedDish} ${dishPrice}`;
+                beverage.innerHTML = `${markedBeverage} ${beveragePrice}`;
+                dessert.innerHTML = `${markedDessert} ${dessertPrice}`;
+                total.innerHTML =  `Total  ${price}`;
+            }
+        }
+    }
+}
+
 function closeOrder(){
+    if(markedDish !== null){
+        if(markedDessert !== null){
+            if( markedBeverage !== null){
+                const name = prompt("Nome");
+                const adress = prompt("Endereço");
+                const finalPrice = (Number.parseFloat(dishPrice.replace(/[^\d.-]/g, '')) + Number.parseFloat(beveragePrice.replace(/[^\d.-]/g, '')) + Number.parseFloat(dessertPrice.replace(/[^\d.-]/g, '')));
+                let text = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n - Prato: ${markedDish} \n - Bebida: ${markedBeverage} \n - Sobremesa: ${markedDessert} \n Total: R$ ${finalPrice.toFixed(2)} \n \n Nome: ${name} \n Endereço: ${adress}`);
+                document.querySelector("a[href='https://wa.me/555496545412?text=']").setAttribute("href", `https://wa.me/555496545412?text=${text}`);
+            }
+        }
+    }
     
-    const finalPrice = (Number.parseFloat(dishPrice.replace(/[^\d.-]/g, '')) + Number.parseFloat(beveragePrice.replace(/[^\d.-]/g, '')) + Number.parseFloat(dessertPrice.replace(/[^\d.-]/g, '')));
-    let text = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n - Prato: ${markedDish} \n - Bebida: ${markedBeverage} \n - Sobremesa: ${markedDessert} \n Total: R$ ${finalPrice.toFixed(2)} \n`);
-    document.querySelector("a[href='https://wa.me/555496545412?text=']").setAttribute("href", `https://wa.me/555496545412?text=${text}`);
-    console.log("Hyperlink Changed");
+}
+
+function cancelOrder(){
+    const confirm = document.querySelector(".check-order");
+    confirm.classList.add("invisible");
 }
